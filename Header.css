@@ -1,0 +1,40 @@
+header{
+    height: 100px;
+    background-color: #E10600;
+    color: #ffffff;
+}
+header a {
+    color:#ffffff;
+    text-decoration: none;
+}
+header h1{
+    margin-left: 40px;
+    padding-top: 1%;
+    font-size: 320%;
+    float: left;
+    text-align: center;
+}
+header ul{
+    list-style-type: none;
+    padding: 0;
+    float: right;
+    margin: 0;
+    padding-top: 28px;
+    margin-right: 20px;
+}
+
+header ul li{
+    display: inline;
+    padding: 10px;
+    font-size: 260%;
+    margin: 20px;    
+}
+
+#otherPages:hover{
+    color: black;
+    background-color: #A50400;
+}
+
+#currentPage{
+    background-color: #A50400;
+}
