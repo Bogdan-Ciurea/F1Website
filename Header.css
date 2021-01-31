@@ -31,10 +31,10 @@ header ul li{
 }
 
 #otherPages:hover{
-    color: black;
+    color: rgb(240, 215, 215);
     background-color: #A50400;
 }
 
 #currentPage{
-    background-color: #A50400;
+    background-color: #a50300a4;
 }

@@ -5,13 +5,14 @@ footer{
     color: #ffffff;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-style: italic;
 }
 footer a {
     text-decoration: none;
     color: #ffffff;
 }
 footer p{
-    padding: 20px;
+    padding: 15px;
     margin-left: 30px;
     font-size: 20px;
 }
