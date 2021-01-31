@@ -2,12 +2,10 @@
     height:550px;
     background-color: #373B44;
 }
-
 .redbull{
     height:550px;
     background-color: #44556ee8;
 }
-
 .mclaren{
     height:550px;
     background-color: #ec8200e8;
@@ -20,9 +18,17 @@
     height:550px;
     background-color: #fede0bef;
 }
+.renault h1{
+    color: black;
+    text-shadow: 1px 1px #373b4448;
+}
 .alphatauri{
     height:550px;
     background-color: #f1f3f4ef;
+}
+.alphatauri h1{
+    color: black;
+    text-shadow: 1px 1px #373b4448;
 }
 .racingpoint{
     height:550px;
@@ -39,4 +45,16 @@
 .williams{
     height:550px;
     background-color: #0194E1;
+}
+
+main div{
+    box-shadow: 2px 2px black;
+}
+
+main div h1{
+    color:white;
+    font-size: 34px;
+    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:2px 2px #373B44;
 }
