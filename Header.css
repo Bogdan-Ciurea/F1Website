@@ -5,6 +5,9 @@
     background-color: #E10600;
     color: #ffffff;
     text-shadow: 1.5px 1px rgba(0, 0, 0, 0.603);
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 .innerHeader{
     width: 90%;
@@ -31,7 +34,7 @@
 }
 
 .navigation{
-    float:right;
+    float: right;
     height: 100%;
 }
 .navigation a:last-child{
@@ -61,4 +64,45 @@
 
 #currentPage{
     background-color: #a50300a4;
+}
+
+
+@media (max-width: 1100px){
+    .innerHeader{
+        width: 100%;
+    }
+}
+
+@media (max-width: 975px){
+    .header{
+        position: absolute;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .innerHeader{
+        width: 100%;
+    }
+    .logo{
+        margin: 10px auto;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .navigation{
+        float: none;
+        text-align: center;
+        display: block;
+        
+    }
+    .navigation a{
+        margin-left: 10%;
+        width: 80%;
+        display: table;
+        float: left;
+        padding: 10px 0;
+    }
+    .navigation a li{
+        display: block;
+        height: auto;
+    }
 }
