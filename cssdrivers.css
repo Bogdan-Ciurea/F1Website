@@ -9,9 +9,10 @@ main{
 .teamlogo{
     width: 100%;
     margin: 20px 0;
+    height: 20%;
 }
 .teamlogo img{
-    width: 30%;
+    height: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -24,7 +25,6 @@ main{
     padding-left: 6%;
 }
 .driver{
-    border: 3px solid rgba(0, 0, 0, 0.568);
     margin-bottom: 20px;
     border-radius: 5px;
 }
@@ -34,14 +34,17 @@ main{
     width: 60%;
 }
 .name{
+    font-family: verdana;
     text-align: center;
     padding: 20px 0 ;
 }
 #mercedes{
     background-color: #373B44;
+    color: white;
 }
 #redbull{
     background-color: #44556ee8;
+    color: rgb(228, 2, 2);
 }
 #mclaren{
     background-color: #ec8200e8;
@@ -59,11 +62,20 @@ main{
     background-color: #EB5FB2;
 }
 #alfaromeo{
+    color: white;
     background-color: #8A0003;
 }
 #haas{
+    color:white;
     background-color: #060509d8;
 }
 #williams{
     background-color: #0194E1;
+}
+
+@media (max-width: 975px){
+    main{
+        margin-top: 502px;
+        grid-template-columns: 100%;
+    }
 }

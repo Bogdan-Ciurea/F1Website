@@ -13,9 +13,10 @@ main{
 .teamlogo{
     width: 100% - 10px;
     padding: 10px;
+    height: 30%;
 }
 .teamlogo img{
-    width: 40%;
+    height: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -50,10 +51,6 @@ main{
 
 #alphatauri{
     background-color: #f1f3f4ef;
-}
-#alphatauri .teamlogo img{
-    height: 200px;
-    width: 200px;
 }
 
 #racingpoint{
