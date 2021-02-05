@@ -1,37 +1,42 @@
 main{
-    margin-top: 100px;
-}
-
-.box{
+    margin-top: 102px;
     display: grid;
-    width: 100%;
     grid-template-columns: 50% 50%;
 }
-.card{
-    height: 100%;
+.team{
+    width: 100%;
 }
 .teamlogo{
-    width: 100% - 10px;
-    padding: 10px;
+    width: 100%;
+    margin: 20px 0;
 }
 .teamlogo img{
-    width: 40%;
+    width: 30%;
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-.photo{
-    width: 80%;
-    margin: 10px 10%;
-    display: block;
+
+.drivers{
+    display: grid;
+    grid-template-columns: 44% 44%;
+    grid-column-gap: 6%;
+    padding-left: 6%;
+}
+.driver{
+    border: 3px solid rgba(0, 0, 0, 0.568);
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 .photo img{
-    width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
+    width: 60%;
 }
-
-
-
+.name{
+    text-align: center;
+    padding: 20px 0 ;
+}
 #mercedes{
     background-color: #373B44;
 }
@@ -47,15 +52,9 @@ main{
 #renault{
     background-color: #fede0bef;
 }
-
 #alphatauri{
     background-color: #f1f3f4ef;
 }
-#alphatauri .teamlogo img{
-    height: 200px;
-    width: 200px;
-}
-
 #racingpoint{
     background-color: #EB5FB2;
 }
@@ -68,14 +67,3 @@ main{
 #williams{
     background-color: #0194E1;
 }
-
-@media (max-width: 975px){
-    main{
-        margin-top: 505px;
-    }
-
-    .box{
-        grid-template-columns: 100%;
-    }
-}
-
