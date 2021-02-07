@@ -3,6 +3,9 @@ main{
     display: grid;
     grid-template-columns: 50% 50%;
 }
+a{
+    color: inherit;
+}
 .team{
     width: 100%;
 }
@@ -38,6 +41,54 @@ main{
     text-align: center;
     padding: 20px 0 ;
 }
+
+
+.driversDescription{
+    width: 88%;
+    margin: 50px 5%;
+}
+.driverDescriptionl{
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 60% 34%;
+    grid-column-gap: 1%;
+    min-height: 300px;
+
+}
+.driverDescriptionr{
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    grid-column-gap: 4%;
+    min-height: 300px;
+
+}
+.about h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 3px;
+}
+.about p{
+    font-size: 18px;
+    text-align: justify;
+    padding: 6px 3px;
+}
+.image{
+    display: block;
+    margin: auto 0 auto auto;
+}
+
+.driverDescriptionr .image{
+    display: block;
+    margin: auto 0;
+}
+
+.image img{
+    border: 1px solid black;
+    height: 100%;
+    max-height: 300px;
+    box-shadow: 0.5px 1px #373B44;
+}
+
 #mercedes{
     background-color: #373B44;
     color: white;
@@ -75,7 +126,35 @@ main{
 
 @media (max-width: 975px){
     main{
-        margin-top: 502px;
+        margin-top: 570px;
         grid-template-columns: 100%;
+    }
+    .driversDescription{
+        width: 90%;
+        margin: 50px 5%;
+    }
+    .driverDescriptionl{
+        grid-template-columns: 65% 35%;
+    }
+    .driverDescriptionr{
+        grid-template-columns: 35% 65%;
+    }
+}
+
+@media (max-width: 650px){
+    .driverDescriptionl{
+        grid-template-columns: 100%;
+    }
+    .driverDescriptionr{
+        grid-template-columns: 100%;
+    }
+    .driverDescriptionr, .driverDescriptionl .image{
+        display: none;
+    }
+}
+
+@media (max-width: 500px){
+    .name h1{
+        font-size: 20px;
     }
 }

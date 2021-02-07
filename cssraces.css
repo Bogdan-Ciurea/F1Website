@@ -1,22 +1,26 @@
 main{
     margin-top: 202px;
 }
-#tabel{
-    width: 80%;
-    margin: 20px 10%;
+.tabel{
+    width: 90%;
+    margin: 20px 5%;
 }
-#tabel h1{
+.tabel h1{
     font-size: 200%;
     padding-bottom: 40px;
+    padding-left: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#tabel table{
-    width: 100%;
+.tabel table{
+    width: 90%;
+    padding-left: 5%;
 }
-#headoftable{
-    font-size: 20px;
+.headoftable{
+    font-size: 18px;
     font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#tabel table tr,td{
+.tabel table tr,td{
     border: 1px solid #dddddd;
     text-align: left;
     padding: 15px;
@@ -26,29 +30,32 @@ tr:nth-child(even){
     background-color: #dddddd;
 }
 
-#container{
-    width: 80%;
+.container{
+    width: 90%;
     display: grid;
-    margin-left: 10%;
-    margin-bottom: 200px;
+    margin-left: 5%;
+    margin-bottom: 150px;
     
-    grid-template-columns: 31% 31% 31%;
-    grid-column-gap:3.5%;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap:0.5%;
 }
-#photo{
+.photo{
     border: 2px solid black;
     width: 377px;
-    margin:auto;
+    display: block;
+    margin: auto;
+    width: inherit;
 }
 
-#photo img{
-    margin: 10px auto;
-    height: 600px;
-    display: block;
+.photo img{
+    width: 90%;
+    max-height: 740px;
+    padding: 3% 5%;
 }
-#photo h1{
+.photo h1{
     text-align: center;
     font-size: larger;
+    padding-bottom: 5%;
 }
 
 
@@ -61,27 +68,36 @@ hr{
 }
 
 
-@media (max-width: 1160px){
-    #tabel{
-        width: 90%;
-        margin-left: 5%;
-    }
-    #container{
-        width: 90%;
-        margin-left: 5%;
-        display: grid;
-        grid-template-columns: 47% 47%;
-        grid-column-gap: 6%;
-        grid-row-gap: 40px;
-    }
-}
-
 @media (max-width: 975px){
     main{
-        margin-top: 542px;
+        margin-top: 620px;
     }
-    #container{
+    
+
+    .tabel{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .tabel table{
+        width: 90%;
+        padding: 0;
+        margin: 0 5%;
+    }
+    .container{
+        margin-bottom: 150px;
         grid-template-columns: 100%;
-        grid-row-gap: 40px;
+    }
+    .photo{
+        max-width: 450px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 500px){
+    .tabel table tr,td{
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 10px 4px;
+        font-size: 14px;
     }
 }
