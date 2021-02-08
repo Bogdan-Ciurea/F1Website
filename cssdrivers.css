@@ -148,7 +148,10 @@ a{
     .driverDescriptionr{
         grid-template-columns: 100%;
     }
-    .driverDescriptionr, .driverDescriptionl .image{
+    .driverDescriptionr .image{
+        display: none;
+    }
+    .driverDescriptionl .image{
         display: none;
     }
 }

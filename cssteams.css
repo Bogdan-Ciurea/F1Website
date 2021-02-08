@@ -17,6 +17,7 @@ main{
 }
 .teamlogo img{
     height: 100%;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -31,7 +32,48 @@ main{
     margin: 0 auto;
 }
 
+.teamsDescription{
+    width: 88%;
+    margin: 50px 5%;
+}
+.teamDescriptionl{
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 60% 34%;
+    grid-column-gap: 5%;
+    min-height: 300px;
+}
+.teamDescriptionr{
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 34% 60%;
+    grid-column-gap: 5%;
+    min-height: 300px;
+}
+.about h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 3px;
+}
+.about p{
+    font-size: 18px;
+    text-align: justify;
+    padding: 6px 3px;
+}
+.image{
+    display: block;
+    margin: auto 0 auto auto;
+}
+.teamDescriptionr .image{
+    display: block;
+    margin: auto auto;
+}
 
+.image img{
+    border: 1px solid black;
+    width: 100%;
+    max-height: 300px;
+    box-shadow: 0.5px 1px #373B44;
+}
 
 #mercedes{
     background-color: #373B44;
@@ -73,6 +115,18 @@ main{
 
     .box{
         grid-template-columns: 100%;
+    }
+    .teamDescriptionl{
+        grid-template-columns: 100%;
+    }
+    .teamDescriptionr{
+        grid-template-columns: 100%;
+    }
+    .teamDescriptionl .image{
+        display: none;
+    }
+    .teamDescriptionr .image{
+        display: none;
     }
 }
 
