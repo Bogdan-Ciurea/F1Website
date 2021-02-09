@@ -126,7 +126,7 @@ a{
 
 @media (max-width: 975px){
     main{
-        margin-top: 570px;
+        margin-top: 502px;
         grid-template-columns: 100%;
     }
     .driversDescription{
