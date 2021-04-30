@@ -1,0 +1,385 @@
+main{
+    margin-top: 102px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 70% 28%;
+    grid-column-gap: 2%;
+}
+
+.boxslider{
+    margin-bottom: 75px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.left h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.slider{
+    border: 3px solid black;
+    padding: 20px 25px 45px 25px;
+    margin: 30px auto;
+    width: 800px;
+    height: 500px;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 700%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 1.5s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.slide h1{
+    color: rgb(41, 28, 37);
+    width: 800px;
+    background-color: rgba(240, 248, 255, 0.308);
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #e10700;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -16.6%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+#radio7:checked ~ .first{
+    margin-left: -120%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #e10700;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #e10700;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #e10700;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #e10700;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: #e10700;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background-color: #e10700;
+}
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background-color: #e10700;
+}
+
+
+.futureraces{
+    background-color: #15151e;
+    width: 100%;
+    color: #ceced1;
+}
+.futureraces h1{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.race{
+    list-style: none;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.race li{
+    padding: 0 15px;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.flag{
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+}
+.country{
+    width: 141px;
+}
+
+.map{
+    width: 100%;
+}
+
+.mapbox{
+    width: 525px;
+    margin: 30px auto 0 auto;
+}
+
+.map button{
+    margin: 20px auto 20px auto;
+    width:150px;
+    height: 25px;
+}
+
+.details{
+    width: 50%;
+    text-align: center;
+    background-color: #15151e;
+    padding: 1px 0 20px 0;
+    margin: 0 auto;
+    border-radius: 15px;
+    color: #ceced1;
+}
+
+.details .race{
+    width: 280px;
+    margin: 50px auto 20px auto;
+}
+.details h3{
+    margin-top: 15px;
+    text-shadow: 0.3px 0.3px black;
+}
+
+.distance{
+    margin: 15px 0;
+    text-shadow: 0.3px 0.3px black;
+}
+
+.details a{
+    color: #acacee;
+    font-size: 18px;
+}
+
+@media (max-width: 1420px){
+    .flag{
+        width: 50px;
+        height: 33px;
+    }
+    .country{
+        width: 100px;
+    }
+    .race{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1200px){
+    main{
+        display: block;
+    }
+    .boxslider{
+        margin-top: 150px;
+    }
+    .map{
+        margin-bottom: 30px;
+    }
+    .race{
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    .futureraces{
+        padding-bottom: 40px;
+    }
+    .flag{
+        height: 40px;
+        width: 60px;
+    }
+    .race{
+        font-size: 17px;
+        flex: 50%;
+        max-width: 50%;
+    }
+    .races{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 975px){
+    main{
+        margin-top: 640px;
+    }
+}
+
+@media (max-width: 900px){
+    .slide img{
+        width: 600px;
+        height: 375px;
+    }
+    .slider{
+        width: 600px;
+        height: 400px;
+    }
+    .navigation-manual{
+        width: 600px;
+        margin-top: -100px;
+    }
+    .navigation-auto{
+        width: 600px;
+        margin-top: 340px;
+    }
+}
+
+@media (max-width: 900px){
+    .slide img{
+        width: 400px;
+        height: 250px;
+    }
+    .slider{
+        width: 400px;
+        height: 275px;
+    }
+    .navigation-manual{
+        width: 400px;
+        margin-top: -220px;
+    }
+    .navigation-auto{
+        width: 400px;
+        margin-top: 220px;
+    }
+}
+
+@media (max-width: 650px){
+    .race{
+        flex: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px){
+    #google_map{
+        width: 400px;
+        height: 343px;
+    }
+    .mapbox{
+        width: 400px;
+    }
+}
+
+@media (max-width: 480px){
+    .slide img{
+        width: 300px;
+        height: 187px;
+    }
+    .slider{
+        width: 300px;
+        height: 200px;
+    }
+    .navigation-manual{
+        width: 300px;
+        margin-top: -290px;
+    }
+    .navigation-auto{
+        width: 300px;
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 450px){
+    .details{
+        width: 80%;
+    }
+}
+
+@media (max-width: 420px){
+    #google_map{
+        width: 300px;
+        height: 257px;
+    }
+    .mapbox{
+        width: 300px;
+    }
+}
+
+@media (max-width: 370px){
+    .slide img{
+        width: 240px;
+        height: 150px;
+    }
+    .slider{
+        width: 231px;
+        height: 154px;
+    }
+    .navigation-manual{
+        width: 200px;
+        margin-top: -330px;
+    }
+    .navigation-auto{
+        width: 200px;
+        margin-top: 110px;
+    }
+}

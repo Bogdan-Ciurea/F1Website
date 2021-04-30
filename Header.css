@@ -52,6 +52,14 @@
     border-radius: 5px;
 }
 
+#toTop{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-color: #E10600;
+    border-radius: 100px;
+}
+
 #otherPages:hover{
     color: rgb(240, 215, 215);
     background-color: #A50400;
@@ -73,7 +81,7 @@
     .header{
         position: absolute;
         height: auto;
-        margin-bottom: 40px;
+        padding-bottom: 10px;
     }
     .innerHeader{
         width: 100%;
