@@ -1,0 +1,8 @@
+footer p a::after{
+    content: " (" attr(href) ") ";
+    display: block;
+}
+footer{
+    margin-top: 40px;
+    text-align: center;
+}

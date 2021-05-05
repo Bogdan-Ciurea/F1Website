@@ -1,0 +1,64 @@
+
+input{
+    display: none;
+}
+.boxslider h1{
+    text-align: center;
+    margin-bottom: 0;
+}
+.map h1{
+    text-align: center;
+    margin: 30px 0;
+}
+.slides{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.slide img{
+    width: 300px;
+    height: 187px;
+    border-radius: 0;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+#google_map{
+    display: block;
+    margin: auto;
+}
+.mapbox button{
+    
+    display: flex;
+    margin: 10px auto 20px auto;
+}
+
+.futureraces{
+    background-color: rgb(21, 21, 30);
+}
+
+.futureraces h1{
+    text-align: center;
+    margin: 400px 0 30px 0;
+}
+
+.races{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.race{
+    margin: 33px;
+}
+
+.race li{
+    text-align: center;
+}
+
+.race img{
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 100px;
+    height: 70px;
+}

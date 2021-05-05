@@ -1,0 +1,61 @@
+.tabel{
+    width: 90%;
+    margin: 20px 5%;
+}
+.tabel h1{
+    font-size: 200%;
+    padding-bottom: 40px;
+    padding-left: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tabel table{
+    width: 98%;
+    padding-left: 1%;
+}
+.headoftable{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tabel table tr,td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px;
+    font-size: 20px;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+.container{
+    width: 90%;
+    display: grid;
+    margin-left: 5%;
+    margin-bottom: 150px;
+    
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap:0.5%;
+}
+.photo{
+    border: 2px solid black;
+    width: 377px;
+    display: block;
+    margin: auto;
+    width: inherit;
+}
+
+.photo img{
+    width: 90%;
+    max-height: 740px;
+    padding: 3% 5%;
+}
+.photo h1{
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 5%;
+}
+
+
+hr{
+    margin: 50px 0;
+}

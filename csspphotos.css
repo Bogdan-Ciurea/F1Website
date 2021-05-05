@@ -1,0 +1,18 @@
+.videos{
+    display: none;
+}
+.images{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-column-gap: 2%;
+    padding-left: 1%;
+}
+
+.col img{
+    vertical-align: middle;
+    width: 98%;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 1px;
+}

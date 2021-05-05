@@ -166,7 +166,7 @@ a{
 
 @media (max-width: 975px){
     main{
-        margin-top: 590px;
+        margin-top: 600px;
     }
     .grid{
         grid-template-columns: 100%;
@@ -207,7 +207,7 @@ a{
         grid-column-gap: 0;
     }
     .title{
-        font-size: 200%;
+        font-size: 300%;
     }
     
 }
